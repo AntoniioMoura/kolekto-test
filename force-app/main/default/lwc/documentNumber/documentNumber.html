@@ -1,0 +1,22 @@
+<template>
+    <lightning-accordion allow-multiple-sections-open>
+        <lightning-accordion-section name="accounts" label="Accounts">
+            <c-account-document-number 
+                accounts = {accounts}>
+            </c-account-document-number><br>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="leads" label="Leads">
+            <c-lead-document-number
+                leads = {leads}>
+        </c-lead-document-number><br>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="opportunities" label="Opportunities">
+            <c-opportunity-document-number
+                opportunities = {opportunities}>
+            </c-opportunity-document-number>
+        </lightning-accordion-section>
+    </lightning-accordion>
+</template>
+
